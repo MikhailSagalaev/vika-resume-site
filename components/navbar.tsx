@@ -13,7 +13,7 @@ import clsx from "clsx";
 
 import { siteConfig } from "@/config/site";
 import { ThemeSwitch } from "@/components/theme-switch";
-import { GithubIcon, DiscordIcon } from "@/components/icons";
+import { GithubIcon, DiscordIcon, LinkedinIcon } from "@/components/icons";
 
 export const Navbar = () => {
   return (
@@ -47,6 +47,9 @@ export const Navbar = () => {
           </Link>
           <Link isExternal href={siteConfig.links.github} title="GitHub">
             <GithubIcon className="text-default-500" />
+          </Link>
+          <Link isExternal href={siteConfig.links.linkedin} title="LinkedIn">
+            <LinkedinIcon className="text-default-500" />
           </Link>
           <ThemeSwitch className="ml-5" />
         </NavbarItem>
