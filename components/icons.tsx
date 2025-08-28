@@ -1,19 +1,9 @@
-import * as React from "react";
+import * as React from 'react';
 
-import { IconSvgProps } from "@/types";
+import { IconSvgProps } from '@/types';
 
-export const Logo: React.FC<IconSvgProps> = ({
-  size = 36,
-  height,
-  ...props
-}) => (
-  <svg
-    fill="none"
-    height={size || height}
-    viewBox="0 0 32 32"
-    width={size || height}
-    {...props}
-  >
+export const Logo: React.FC<IconSvgProps> = ({ size = 36, height, ...props }) => (
+  <svg fill="none" height={size || height} viewBox="0 0 32 32" width={size || height} {...props}>
     <path
       clipRule="evenodd"
       d="M17.6482 10.1305L15.8785 7.02583L7.02979 22.5499H10.5278L17.6482 10.1305ZM19.8798 14.0457L18.11 17.1983L19.394 19.4511H16.8453L15.1056 22.5499H24.7272L19.8798 14.0457Z"
@@ -23,19 +13,9 @@ export const Logo: React.FC<IconSvgProps> = ({
   </svg>
 );
 
-export const DiscordIcon: React.FC<IconSvgProps> = ({
-  size = 24,
-  width,
-  height,
-  ...props
-}) => {
+export const DiscordIcon: React.FC<IconSvgProps> = ({ size = 24, width, height, ...props }) => {
   return (
-    <svg
-      height={size || height}
-      viewBox="0 0 24 24"
-      width={size || width}
-      {...props}
-    >
+    <svg height={size || height} viewBox="0 0 24 24" width={size || width} {...props}>
       <path
         d="M14.82 4.26a10.14 10.14 0 0 0-.53 1.1 14.66 14.66 0 0 0-4.58 0 10.14 10.14 0 0 0-.53-1.1 16 16 0 0 0-4.13 1.3 17.33 17.33 0 0 0-3 11.59 16.6 16.6 0 0 0 5.07 2.59A12.89 12.89 0 0 0 8.23 18a9.65 9.65 0 0 1-1.71-.83 3.39 3.39 0 0 0 .42-.33 11.66 11.66 0 0 0 10.12 0q.21.18.42.33a10.84 10.84 0 0 1-1.71.84 12.41 12.41 0 0 0 1.08 1.78 16.44 16.44 0 0 0 5.06-2.59 17.22 17.22 0 0 0-3-11.59 16.09 16.09 0 0 0-4.09-1.35zM8.68 14.81a1.94 1.94 0 0 1-1.8-2 1.93 1.93 0 0 1 1.8-2 1.93 1.93 0 0 1 1.8 2 1.93 1.93 0 0 1-1.8 2zm6.64 0a1.94 1.94 0 0 1-1.8-2 1.93 1.93 0 0 1 1.8-2 1.92 1.92 0 0 1 1.8 2 1.92 1.92 0 0 1-1.8 2z"
         fill="currentColor"
@@ -44,19 +24,9 @@ export const DiscordIcon: React.FC<IconSvgProps> = ({
   );
 };
 
-export const GithubIcon: React.FC<IconSvgProps> = ({
-  size = 24,
-  width,
-  height,
-  ...props
-}) => {
+export const GithubIcon: React.FC<IconSvgProps> = ({ size = 24, width, height, ...props }) => {
   return (
-    <svg
-      height={size || height}
-      viewBox="0 0 24 24"
-      width={size || width}
-      {...props}
-    >
+    <svg height={size || height} viewBox="0 0 24 24" width={size || width} {...props}>
       <path
         clipRule="evenodd"
         d="M12.026 2c-5.509 0-9.974 4.465-9.974 9.974 0 4.406 2.857 8.145 6.821 9.465.499.09.679-.217.679-.481 0-.237-.008-.865-.011-1.696-2.775.602-3.361-1.338-3.361-1.338-.452-1.152-1.107-1.459-1.107-1.459-.905-.619.069-.605.069-.605 1.002.07 1.527 1.028 1.527 1.028.89 1.524 2.336 1.084 2.902.829.091-.645.351-1.085.635-1.334-2.214-.251-4.542-1.107-4.542-4.93 0-1.087.389-1.979 1.024-2.675-.101-.253-.446-1.268.099-2.64 0 0 .837-.269 2.742 1.021a9.582 9.582 0 0 1 2.496-.336 9.554 9.554 0 0 1 2.496.336c1.906-1.291 2.742-1.021 2.742-1.021.545 1.372.203 2.387.099 2.64.64.696 1.024 1.587 1.024 2.675 0 3.833-2.33 4.675-4.552 4.922.355.308.675.916.675 1.846 0 1.334-.012 2.41-.012 2.737 0 .267.178.577.687.479C19.146 20.115 22 16.379 22 11.974 22 6.465 17.535 2 12.026 2z"
@@ -67,63 +37,34 @@ export const GithubIcon: React.FC<IconSvgProps> = ({
   );
 };
 
-export const TelegramIcon: React.FC<IconSvgProps> = ({
-  size = 24,
-  width,
-  height,
-  ...props
-}) => (
-  <svg
-    height={size || height}
-    width={size || width}
-    viewBox="0 0 24 24"
-    fill="none"
-    {...props}
-  >
-    <path d="M9.036 15.07l-.375 5.29c.537 0 .769-.23 1.047-.504l2.512-2.41 5.207 3.816c.955.528 1.637.251 1.895-.885l3.431-16.08h.001c.306-1.425-.515-1.983-1.44-1.632L1.52 9.613C.128 10.156.138 10.95 1.273 11.31l5.2 1.623 12.09-7.625c.569-.373 1.087-.167.66.206L9.036 15.07z" fill="currentColor" />
+export const TelegramIcon: React.FC<IconSvgProps> = ({ size = 24, width, height, ...props }) => (
+  <svg height={size || height} width={size || width} viewBox="0 0 24 24" fill="none" {...props}>
+    <path
+      d="M9.036 15.07l-.375 5.29c.537 0 .769-.23 1.047-.504l2.512-2.41 5.207 3.816c.955.528 1.637.251 1.895-.885l3.431-16.08h.001c.306-1.425-.515-1.983-1.44-1.632L1.52 9.613C.128 10.156.138 10.95 1.273 11.31l5.2 1.623 12.09-7.625c.569-.373 1.087-.167.66.206L9.036 15.07z"
+      fill="currentColor"
+    />
   </svg>
 );
 
-export const VkIcon: React.FC<IconSvgProps> = ({
-  size = 24,
-  width,
-  height,
-  ...props
-}) => (
-  <svg
-    height={size || height}
-    width={size || width}
-    viewBox="0 0 24 24"
-    fill="none"
-    {...props}
-  >
-    <path d="M22.54 6.42c.17-.54 0-.93-.78-.93h-2.58c-.65 0-.95.34-1.12.7 0 0-1.3 3.16-3.14 5.21-.6.6-.88.79-1.21.79-.17 0-.43-.19-.43-.73V6.42c0-.65-.19-.93-.73-.93H8.7c-.4 0-.65.3-.65.58 0 .61.91.75 1 2.46v3.72c0 .82-.15.96-.48.96-.88 0-3.03-3.18-4.3-6.82-.25-.69-.5-.97-1.16-.97H.52c-.74 0-.9.34-.9.7 0 .66.88 3.93 4.09 8.25C5.63 17.1 7.95 18.4 10.04 18.4c1.26 0 1.41-.28 1.41-.97v-2.24c0-.73.15-.86.66-.86.37 0 1 .19 2.47 1.65 1.69 1.69 1.97 2.45 2.91 2.45h2.58c.74 0 1.11-.28.9-1.04-.24-.76-1.12-1.86-2.29-3.16-.62-.74-1.56-1.54-1.83-1.94-.39-.47-.28-.68 0-1.09 0 0 3.23-4.55 3.56-6.09z" fill="currentColor" />
+export const VkIcon: React.FC<IconSvgProps> = ({ size = 24, width, height, ...props }) => (
+  <svg height={size || height} width={size || width} viewBox="0 0 24 24" fill="none" {...props}>
+    <path
+      d="M22.54 6.42c.17-.54 0-.93-.78-.93h-2.58c-.65 0-.95.34-1.12.7 0 0-1.3 3.16-3.14 5.21-.6.6-.88.79-1.21.79-.17 0-.43-.19-.43-.73V6.42c0-.65-.19-.93-.73-.93H8.7c-.4 0-.65.3-.65.58 0 .61.91.75 1 2.46v3.72c0 .82-.15.96-.48.96-.88 0-3.03-3.18-4.3-6.82-.25-.69-.5-.97-1.16-.97H.52c-.74 0-.9.34-.9.7 0 .66.88 3.93 4.09 8.25C5.63 17.1 7.95 18.4 10.04 18.4c1.26 0 1.41-.28 1.41-.97v-2.24c0-.73.15-.86.66-.86.37 0 1 .19 2.47 1.65 1.69 1.69 1.97 2.45 2.91 2.45h2.58c.74 0 1.11-.28.9-1.04-.24-.76-1.12-1.86-2.29-3.16-.62-.74-1.56-1.54-1.83-1.94-.39-.47-.28-.68 0-1.09 0 0 3.23-4.55 3.56-6.09z"
+      fill="currentColor"
+    />
   </svg>
 );
 
-export const InstagramIcon: React.FC<IconSvgProps> = ({
-  size = 24,
-  width,
-  height,
-  ...props
-}) => (
-  <svg
-    height={size || height}
-    width={size || width}
-    viewBox="0 0 24 24"
-    fill="none"
-    {...props}
-  >
-    <path d="M7 2h10a5 5 0 015 5v10a5 5 0 01-5 5H7a5 5 0 01-5-5V7a5 5 0 015-5zm0 2a3 3 0 00-3 3v10a3 3 0 003 3h10a3 3 0 003-3V7a3 3 0 00-3-3H7zm5 3a5 5 0 110 10 5 5 0 010-10zm0 2.2A2.8 2.8 0 1014.8 12 2.8 2.8 0 0012 9.2zM18 6.5a1 1 0 110 2 1 1 0 010-2z" fill="currentColor" />
+export const InstagramIcon: React.FC<IconSvgProps> = ({ size = 24, width, height, ...props }) => (
+  <svg height={size || height} width={size || width} viewBox="0 0 24 24" fill="none" {...props}>
+    <path
+      d="M7 2h10a5 5 0 015 5v10a5 5 0 01-5 5H7a5 5 0 01-5-5V7a5 5 0 015-5zm0 2a3 3 0 00-3 3v10a3 3 0 003 3h10a3 3 0 003-3V7a3 3 0 00-3-3H7zm5 3a5 5 0 110 10 5 5 0 010-10zm0 2.2A2.8 2.8 0 1014.8 12 2.8 2.8 0 0012 9.2zM18 6.5a1 1 0 110 2 1 1 0 010-2z"
+      fill="currentColor"
+    />
   </svg>
 );
 
-export const LinkedinIcon = ({
-  size = 24,
-  width,
-  height,
-  ...props
-}: IconSvgProps) => (
+export const LinkedinIcon = ({ size = 24, width, height, ...props }: IconSvgProps) => (
   <svg
     aria-hidden="true"
     focusable="false"
@@ -140,12 +81,7 @@ export const LinkedinIcon = ({
   </svg>
 );
 
-export const MoonFilledIcon = ({
-  size = 24,
-  width,
-  height,
-  ...props
-}: IconSvgProps) => (
+export const MoonFilledIcon = ({ size = 24, width, height, ...props }: IconSvgProps) => (
   <svg
     aria-hidden="true"
     focusable="false"
@@ -162,12 +98,7 @@ export const MoonFilledIcon = ({
   </svg>
 );
 
-export const SunFilledIcon = ({
-  size = 24,
-  width,
-  height,
-  ...props
-}: IconSvgProps) => (
+export const SunFilledIcon = ({ size = 24, width, height, ...props }: IconSvgProps) => (
   <svg
     aria-hidden="true"
     focusable="false"

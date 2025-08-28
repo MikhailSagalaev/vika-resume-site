@@ -1,7 +1,8 @@
-"use client";
+'use client';
 
-import React, {useEffect, useMemo, useState} from "react";
-import Lightbox from "@/components/lightbox";
+import React, { useEffect, useMemo, useState } from 'react';
+
+import Lightbox from '@/components/lightbox';
 
 type CaseGalleryProps = {
   images: { src: string; alt?: string }[];
@@ -15,18 +16,22 @@ export const CaseGallery: React.FC<CaseGalleryProps> = ({ images }) => {
   const go = (delta: number) => {
     if (idx < 0) return;
     const next = (idx + delta + order.length) % order.length;
+
     setOpen(order[next]);
   };
 
   useEffect(() => {
     const onKey = (e: KeyboardEvent) => {
       if (!open) return;
-      if (e.key === "ArrowRight") go(1);
-      if (e.key === "ArrowLeft") go(-1);
+      if (e.key === 'ArrowRight') go(1);
+      if (e.key === 'ArrowLeft') go(-1);
     };
-    document.addEventListener("keydown", onKey);
-    return () => document.removeEventListener("keydown", onKey);
+
+    document.addEventListener('keydown', onKey);
+
+    return () => document.removeEventListener('keydown', onKey);
   }, [open, idx, order]);
+
   return (
     <div>
       <div className="grid grid-cols-2 md:grid-cols-3 gap-3">
@@ -36,7 +41,11 @@ export const CaseGallery: React.FC<CaseGalleryProps> = ({ images }) => {
             className="group relative rounded-xl overflow-hidden border border-default-200/50 hover-card"
             onClick={() => setOpen(img.src)}
           >
-            <img src={img.src} alt={img.alt || "Case image"} className="aspect-video w-full object-cover" />
+            <img
+              src={img.src}
+              alt={img.alt || 'Case image'}
+              className="aspect-video w-full object-cover"
+            />
             <div className="pointer-events-none absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-colors" />
           </button>
         ))}
@@ -66,5 +75,3 @@ export const CaseGallery: React.FC<CaseGalleryProps> = ({ images }) => {
 };
 
 export default CaseGallery;
-
-

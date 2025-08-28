@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react';
 
 type SkillMeterProps = {
   label: string;
@@ -25,5 +25,3 @@ export const SkillMeter: React.FC<SkillMeterProps> = ({ label, value, hint }) =>
 };
 
 export default SkillMeter;
-
-
