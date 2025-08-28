@@ -1,7 +1,7 @@
-import React from "react";
-import NextHead from "next/head";
+import React from 'react';
+import NextHead from 'next/head';
 
-import { siteConfig } from "@/config/site";
+import { siteConfig } from '@/config/site';
 
 export const Head = () => {
   return (
@@ -23,8 +23,8 @@ export const Head = () => {
         type="application/ld+json"
         dangerouslySetInnerHTML={{
           __html: JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "Person",
+            '@context': 'https://schema.org',
+            '@type': 'Person',
             name: siteConfig.name,
             description: siteConfig.description,
             sameAs: [siteConfig.links.telegram],
