@@ -67,6 +67,57 @@ export const GithubIcon: React.FC<IconSvgProps> = ({
   );
 };
 
+export const TelegramIcon: React.FC<IconSvgProps> = ({
+  size = 24,
+  width,
+  height,
+  ...props
+}) => (
+  <svg
+    height={size || height}
+    width={size || width}
+    viewBox="0 0 24 24"
+    fill="none"
+    {...props}
+  >
+    <path d="M9.036 15.07l-.375 5.29c.537 0 .769-.23 1.047-.504l2.512-2.41 5.207 3.816c.955.528 1.637.251 1.895-.885l3.431-16.08h.001c.306-1.425-.515-1.983-1.44-1.632L1.52 9.613C.128 10.156.138 10.95 1.273 11.31l5.2 1.623 12.09-7.625c.569-.373 1.087-.167.66.206L9.036 15.07z" fill="currentColor" />
+  </svg>
+);
+
+export const VkIcon: React.FC<IconSvgProps> = ({
+  size = 24,
+  width,
+  height,
+  ...props
+}) => (
+  <svg
+    height={size || height}
+    width={size || width}
+    viewBox="0 0 24 24"
+    fill="none"
+    {...props}
+  >
+    <path d="M22.54 6.42c.17-.54 0-.93-.78-.93h-2.58c-.65 0-.95.34-1.12.7 0 0-1.3 3.16-3.14 5.21-.6.6-.88.79-1.21.79-.17 0-.43-.19-.43-.73V6.42c0-.65-.19-.93-.73-.93H8.7c-.4 0-.65.3-.65.58 0 .61.91.75 1 2.46v3.72c0 .82-.15.96-.48.96-.88 0-3.03-3.18-4.3-6.82-.25-.69-.5-.97-1.16-.97H.52c-.74 0-.9.34-.9.7 0 .66.88 3.93 4.09 8.25C5.63 17.1 7.95 18.4 10.04 18.4c1.26 0 1.41-.28 1.41-.97v-2.24c0-.73.15-.86.66-.86.37 0 1 .19 2.47 1.65 1.69 1.69 1.97 2.45 2.91 2.45h2.58c.74 0 1.11-.28.9-1.04-.24-.76-1.12-1.86-2.29-3.16-.62-.74-1.56-1.54-1.83-1.94-.39-.47-.28-.68 0-1.09 0 0 3.23-4.55 3.56-6.09z" fill="currentColor" />
+  </svg>
+);
+
+export const InstagramIcon: React.FC<IconSvgProps> = ({
+  size = 24,
+  width,
+  height,
+  ...props
+}) => (
+  <svg
+    height={size || height}
+    width={size || width}
+    viewBox="0 0 24 24"
+    fill="none"
+    {...props}
+  >
+    <path d="M7 2h10a5 5 0 015 5v10a5 5 0 01-5 5H7a5 5 0 01-5-5V7a5 5 0 015-5zm0 2a3 3 0 00-3 3v10a3 3 0 003 3h10a3 3 0 003-3V7a3 3 0 00-3-3H7zm5 3a5 5 0 110 10 5 5 0 010-10zm0 2.2A2.8 2.8 0 1014.8 12 2.8 2.8 0 0012 9.2zM18 6.5a1 1 0 110 2 1 1 0 010-2z" fill="currentColor" />
+  </svg>
+);
+
 export const LinkedinIcon = ({
   size = 24,
   width,

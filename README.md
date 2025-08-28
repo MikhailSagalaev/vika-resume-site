@@ -1,55 +1,79 @@
-# Next.js & HeroUI Template
+# Резюме Виктории Малыхиной - Project & Sales Manager
 
-This is a template for creating applications using Next.js 14 (pages directory) and HeroUI (v2).
+## Описание проекта
 
-[Try it on CodeSandbox](https://githubbox.com/heroui-inc/next-pages-template)
+Персональный сайт-резюме, созданный на Next.js с использованием HeroUI компонентов. Сайт представляет профессиональный опыт, навыки и достижения Виктории Малыхиной в области проектного менеджмента и продаж.
 
-> Note: Since Next.js 14, the pages router is recommend migrating to the [new App Router](https://nextjs.org/docs/app) to leverage React's latest features
->
-> Read more: [Pages Router](https://nextjs.org/docs/pages)
+## Технологии
 
-## Technologies Used
+- **Frontend**: Next.js 15, React 18, TypeScript
+- **UI Framework**: HeroUI компоненты
+- **Styling**: Tailwind CSS
+- **Animations**: Framer Motion
+- **Build Tool**: Next.js с Turbo режимом
 
-- [Next.js 14](https://nextjs.org/docs/getting-started)
-- [HeroUI](https://heroui.com)
-- [Tailwind CSS](https://tailwindcss.com)
-- [Tailwind Variants](https://tailwind-variants.org)
-- [TypeScript](https://www.typescriptlang.org)
-- [Framer Motion](https://www.framer.com/motion)
-- [next-themes](https://github.com/pacocoursey/next-themes)
+## Ключевые особенности
 
-## How to Use
+- Адаптивный дизайн для всех устройств
+- Интерактивные компоненты с анимациями
+- Галерея кейсов с изображениями
+- Счетчики метрик с анимацией
+- Темная/светлая тема
+- Многоязычная поддержка (русский/английский)
+- Печать резюме
+- Отображение сертификатов
 
-To create a new project based on this template using `create-next-app`, run the following command:
+## Структура проекта
 
-```bash
-npx create-next-app -e https://github.com/heroui-inc/next-pages-template
+```
+resume-site/
+├── components/          # React компоненты
+├── config/             # Конфигурация (шрифты, сайт)
+├── layouts/            # Макеты страниц
+├── pages/              # Страницы Next.js
+├── public/             # Статические файлы
+├── styles/             # Глобальные стили
+└── types/              # TypeScript типы
 ```
 
-### Install dependencies
+## Установка и запуск
 
-You can use one of them `npm`, `yarn`, `pnpm`, `bun`, Example using `npm`:
-
+1. Установите зависимости:
 ```bash
 npm install
+# или
+pnpm install
 ```
 
-### Run the development server
-
+2. Запустите проект в режиме разработки:
 ```bash
 npm run dev
+# или
+pnpm dev
 ```
 
-### Setup pnpm (optional)
+3. Откройте [http://localhost:3000](http://localhost:3000) в браузере
 
-If you are using `pnpm`, you need to add the following code to your `.npmrc` file:
+## Скрипты
 
-```bash
-public-hoist-pattern[]=*@heroui/*
-```
+- `npm run dev` - запуск в режиме разработки
+- `npm run build` - сборка для продакшена
+- `npm run start` - запуск продакшен версии
+- `npm run lint` - проверка кода ESLint
 
-After modifying the `.npmrc` file, you need to run `pnpm install` again to ensure that the dependencies are installed correctly.
+## Деплой
 
-## License
+Проект готов к деплою на:
+- Vercel (рекомендуется для Next.js)
+- Netlify
+- Любой хостинг с поддержкой Node.js
 
-Licensed under the [MIT license](https://github.com/heroui-inc/next-pages-template/blob/main/LICENSE).
+## Автор
+
+Виктория Малыхина - Project & Sales Manager
+- Telegram: [@mal_ina_victoria](https://t.me/mal_ina_victoria)
+- Email: mal_ina-victoria@mail.ru
+
+## Лицензия
+
+MIT License

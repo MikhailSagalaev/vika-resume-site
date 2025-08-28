@@ -1,3 +1,73 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* Glassmorphism header */
+.glass {
+  @apply bg-background/60 backdrop-blur-xl;
+}
+
+/* Fancy hover states */
+.hover-card {
+  @apply transition-transform transition-colors duration-300 hover:-translate-y-0.5 hover:shadow-lg hover:border-default-300;
+}
+
+/* Animated underline on nav links */
+.nav-underline {
+  position: relative;
+}
+.nav-underline::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  width: 0;
+  height: 2px;
+  background: #e5e7eb;
+  transition: width 250ms ease;
+}
+.nav-underline:hover::after {
+  width: 100%;
+}
+
+/* Print styles */
+@page {
+  size: A4;
+  margin: 12mm;
+}
+
+@media print {
+  nav, footer, .no-print { display: none !important; }
+  .only-print { display: block !important; }
+  html, body { background: #ffffff !important; }
+}
+
+.only-print { display: none; }
+
+.print-container {
+  width: 210mm;
+  min-height: 297mm;
+  @apply bg-white text-black mx-auto p-8;
+}
+
+.print-toolbar {
+  @apply fixed top-4 right-4 z-50 flex gap-2;
+}
+
+.page-break {
+  break-before: page;
+}
+
+/* Smooth scroll and anchor offset for fixed header */
+html { scroll-behavior: smooth; }
+section[id] { scroll-margin-top: 88px; }
+
+.hover-chip {
+  @apply transition-colors duration-200 hover:bg-default-200;
+}
+
+/* Dark theme neutral hover color */
+.dark .hover-chip:hover {
+  background-color: #e5e7eb !important;
+  color: #111827 !important;
+}

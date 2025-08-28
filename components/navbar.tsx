@@ -13,11 +13,17 @@ import clsx from "clsx";
 
 import { siteConfig } from "@/config/site";
 import { ThemeSwitch } from "@/components/theme-switch";
-import { GithubIcon, DiscordIcon, LinkedinIcon } from "@/components/icons";
+import { TelegramIcon } from "@/components/icons";
+import { LangSwitch } from "@/components/lang-switch";
 
 export const Navbar = () => {
+  // removed mini-game
   return (
-    <HeroUINavbar maxWidth="xl" position="sticky">
+    <HeroUINavbar
+      maxWidth="xl"
+      position="static"
+      className="glass fixed top-0 left-0 right-0 z-50"
+    >
       <NavbarContent className="basis-1/5 sm:basis-full" justify="start">
         <div className="hidden lg:flex gap-4 justify-start ml-2">
           {siteConfig.navItems.map((item) => (
@@ -25,7 +31,7 @@ export const Navbar = () => {
               <NextLink
                 className={clsx(
                   linkStyles({ color: "foreground" }),
-                  "data-[active=true]:text-primary data-[active=true]:font-medium",
+                  "nav-underline data-[active=true]:text-primary data-[active=true]:font-medium",
                 )}
                 color="foreground"
                 href={item.href}
@@ -37,31 +43,27 @@ export const Navbar = () => {
         </div>
       </NavbarContent>
 
-      <NavbarContent
-        className="hidden sm:flex basis-1/5 sm:basis-full"
-        justify="end"
-      >
-        <NavbarItem className="hidden sm:flex gap-2">
-          <Link isExternal href={siteConfig.links.discord} title="Discord">
-            <DiscordIcon className="text-default-500" />
-          </Link>
-          <Link isExternal href={siteConfig.links.github} title="GitHub">
-            <GithubIcon className="text-default-500" />
-          </Link>
-          <Link isExternal href={siteConfig.links.linkedin} title="LinkedIn">
-            <LinkedinIcon className="text-default-500" />
-          </Link>
-          <ThemeSwitch className="ml-5" />
+      <NavbarContent className="hidden sm:flex basis-1/5 sm:basis-full" justify="end">
+        <NavbarItem className="hidden sm:flex items-center gap-3">
+          <a href="https://t.me/mal_ina_victoria" target="_blank" rel="noreferrer noopener" title="Telegram" aria-label="Telegram">
+            <TelegramIcon className="h-6 w-6 text-default-500 hover:text-foreground transition-colors" />
+          </a>
+          <ThemeSwitch />
+          <LangSwitch />
         </NavbarItem>
       </NavbarContent>
 
       <NavbarContent className="sm:hidden basis-1 pl-4" justify="end">
-        <Link isExternal href={siteConfig.links.github}>
-          <GithubIcon className="text-default-500" />
-        </Link>
-        <ThemeSwitch />
-        <NavbarMenuToggle />
+        <div className="flex items-center gap-3">
+          <a href="https://t.me/mal_ina_victoria" target="_blank" rel="noreferrer noopener" aria-label="Telegram">
+            <TelegramIcon className="h-6 w-6 text-default-500 hover:text-foreground transition-colors" />
+          </a>
+          <ThemeSwitch />
+          <NavbarMenuToggle />
+        </div>
       </NavbarContent>
+
+      {null}
 
       <NavbarMenu>
         <div className="mx-4 mt-2 flex flex-col gap-2">

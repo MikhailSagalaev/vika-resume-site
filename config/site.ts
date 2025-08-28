@@ -1,67 +1,53 @@
 export type SiteConfig = typeof siteConfig;
 
 export const siteConfig = {
-  name: "Hi I'm Szymon",
-  description: "Check out my portfolio",
+  name: "Виктория Малыхина — Project & Sales Manager",
+  description: "Сопровождаю 200 проектов одновременно · 1 153 проектов за 3 года · 75 млн ₽ оборота",
   navItems: [
     {
-      label: "Home",
-      href: "/",
+      label: "Резюме",
+      href: "/#resume",
     },
     {
-      label: "Docs",
-      href: "/docs",
+      label: "Навыки",
+      href: "/#skills",
     },
     {
-      label: "Pricing",
-      href: "/pricing",
+      label: "Опыт",
+      href: "/#experience",
     },
     {
-      label: "Blog",
-      href: "/blog",
+      label: "Цели",
+      href: "/#goals",
     },
     {
-      label: "About",
-      href: "/about",
+      label: "Контакты",
+      href: "/#contacts",
     },
   ],
   navMenuItems: [
     {
-      label: "Profile",
-      href: "/profile",
+      label: "Резюме",
+      href: "/#resume",
     },
     {
-      label: "Dashboard",
-      href: "/dashboard",
+      label: "Навыки",
+      href: "/#skills",
     },
     {
-      label: "Projects",
-      href: "/projects",
+      label: "Опыт",
+      href: "/#experience",
     },
     {
-      label: "Team",
-      href: "/team",
+      label: "Цели",
+      href: "/#goals",
     },
     {
-      label: "Calendar",
-      href: "/calendar",
-    },
-    {
-      label: "Settings",
-      href: "/settings",
-    },
-    {
-      label: "Help & Feedback",
-      href: "/help-feedback",
-    },
-    {
-      label: "Logout",
-      href: "/logout",
+      label: "Контакты",
+      href: "/#contacts",
     },
   ],
   links: {
-    github: "https://github.com/Hacki01",
-    linkedin: "https://www.linkedin.com/in/szymon-matloch/",
-    discord: "https://discord.gg/6KysCG6Yak",
+    telegram: "https://t.me/mal_ina_victoria",
   },
 };
